@@ -1,3 +1,23 @@
+@import "variables";
+
 body {
-    background-color: rgb(51, 85, 85);
+    background-color: $baby-blue;
+}
+
+.navbar {
+    height: 65vh;
+    width: 95vh;
+    margin-top: 0%;
+    background-color: $sky-blue;
+
+}
+
+
+.sign-up-background-container {
+    height: 65vh;
+    width: 95vh;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 4%;
+    background-color: $sky-blue;
 }

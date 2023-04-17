@@ -1,3 +1,19 @@
 body {
-  background-color: rgb(51, 85, 85);
+  background-color: #a1e1ff;
+}
+
+.navbar {
+  height: 65vh;
+  width: 95vh;
+  margin-top: 0%;
+  background-color: #35b2fa;
+}
+
+.sign-up-background-container {
+  height: 65vh;
+  width: 95vh;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 4%;
+  background-color: #35b2fa;
 }/*# sourceMappingURL=style.css.map */
