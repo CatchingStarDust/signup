@@ -1,12 +1,23 @@
+@font-face {
+  font-family: "ubuntubold";
+  src: url("ubuntu-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ubuntumedium";
+  src: url("ubuntu-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ubunturegular";
+  src: url("ubuntu-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-color: #a1e1ff;
-}
-
-.navbar {
-  height: 65vh;
-  width: 95vh;
-  margin-top: 0%;
-  background-color: #35b2fa;
 }
 
 .sign-up-background-container {
@@ -15,5 +26,24 @@ body {
   margin: auto;
   margin-top: 10%;
   border-radius: 4%;
-  background-color: #35b2fa;
+  background-color: white;
+}
+
+.sign-up-left {
+  height: 65vh;
+  width: 95vh;
+  background-color: #ff0000;
+}
+
+.personal-info {
+  font-family: "ubuntubold";
+}
+
+.nagivation-buttons {
+  font-family: "ubuntubold";
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background-color: white;
+  margin-top: 100%;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */

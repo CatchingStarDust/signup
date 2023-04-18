@@ -1,16 +1,18 @@
 @import "variables";
+@import "fonts";
 
 body {
     background-color: $baby-blue;
 }
 
-.navbar {
-    height: 65vh;
-    width: 95vh;
-    margin-top: 0%;
-    background-color: $sky-blue;
+// .navbar {
+//     font-family: 'ubuntubold';
+//     height: 65vh;
+//     width: 95vh;
+//     margin-top: 0%;
+//     background-color: $sky-blue;
 
-}
+// }
 
 
 .sign-up-background-container {
@@ -19,5 +21,28 @@ body {
     margin: auto;
     margin-top: 10%;
     border-radius: 4%;
-    background-color: $sky-blue;
+    background-color: $white;
+
+}
+
+.sign-up-left {
+    height: 65vh;
+    width: 95vh;
+    background-color: $red;
+}
+
+.sign-up-right {}
+
+
+
+.personal-info {
+    font-family: 'ubuntubold';
+}
+
+.nagivation-buttons {
+    font-family: 'ubuntubold';
+    max-width: max-content;
+    background-color: $white;
+    margin-top: 100%;
+    border-radius: 50px;
 }
