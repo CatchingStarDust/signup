@@ -29,17 +29,24 @@ body {
 
 }
 
-// .sign-up-left {
-//     height: 65vh;
-//     width: 95vh;
-//     background-color: $red;
-// }
+.background-left {
+    display: grid;
+    height: 65vh;
+    width: 40vh;
+    border-radius: 4%;
+    background-color: $red;
+}
 
-.sign-up-right {}
+.background-right {
+    font-family: 'ubunturegular';
+    max-width: 46rem;
+    display: grid;
+
+}
 
 
 
-.personal-info {
+.section-title {
     font-family: 'ubuntubold';
 }
 

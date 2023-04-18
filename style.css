@@ -32,7 +32,21 @@ body {
   box-shadow: 0 5px 25px 0 rgba(30, 0, 161, 0.25);
 }
 
-.personal-info {
+.background-left {
+  display: grid;
+  height: 65vh;
+  width: 40vh;
+  border-radius: 4%;
+  background-color: #ff0000;
+}
+
+.background-right {
+  font-family: "ubunturegular";
+  max-width: 46rem;
+  display: grid;
+}
+
+.section-title {
   font-family: "ubuntubold";
 }
 
