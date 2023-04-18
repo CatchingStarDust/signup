@@ -17,7 +17,8 @@ body {
 
 .sign-up-background-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40vh 55vh;
+    padding: 15px;
     height: 65vh;
     width: 95vh;
     margin: auto;
@@ -25,16 +26,15 @@ body {
     border-radius: 4%;
     background-color: $white;
     box-shadow: 0 5px 25px 0 rgba(30, 0, 161, 0.25)
-
-
 }
 
 .background-left {
     display: grid;
     height: 65vh;
-    width: 40vh;
+    width: 30vh;
     border-radius: 4%;
     background-color: $red;
+
 }
 
 .background-right {
@@ -45,9 +45,15 @@ body {
 }
 
 
-
 .section-title {
     font-family: 'ubuntubold';
+
+}
+
+.extra-information {
+    font-family: 'ubunturegular';
+    margin-top: -4.5%;
+    color: $light-grey;
 }
 
 .nagivation-button {
@@ -60,4 +66,9 @@ body {
     margin-top: 100%;
     cursor: pointer;
     border-radius: 100vw;
+}
+
+.personal-info {
+    font-family: 'ubunturegular';
+
 }
