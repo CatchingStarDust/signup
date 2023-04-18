@@ -50,16 +50,21 @@ body {
 
 }
 
-.extra-information {
+.prompt {
     font-family: 'ubunturegular';
+    color: $grey;
     margin-top: -4.5%;
-    color: $light-grey;
+}
+
+.enter-info-container {
+    font-family: 'ubunturegular';
 }
 
 .nagivation-button {
+    display: relative;
     background-color: $red;
-    color: $white;
     font-family: 'ubuntubold';
+    color: $white;
     line-height: 1;
     padding: 1rem 2rem;
     max-width: max-content;
