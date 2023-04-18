@@ -21,29 +21,30 @@ body {
 }
 
 .sign-up-background-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 65vh;
   width: 95vh;
   margin: auto;
   margin-top: 10%;
   border-radius: 4%;
   background-color: white;
-}
-
-.sign-up-left {
-  height: 65vh;
-  width: 95vh;
-  background-color: #ff0000;
+  box-shadow: 0 5px 25px 0 rgba(30, 0, 161, 0.25);
 }
 
 .personal-info {
   font-family: "ubuntubold";
 }
 
-.nagivation-buttons {
+.nagivation-button {
+  background-color: #ff0000;
+  color: white;
   font-family: "ubuntubold";
+  line-height: 1;
+  padding: 1rem 2rem;
   max-width: -moz-max-content;
   max-width: max-content;
-  background-color: white;
   margin-top: 100%;
-  border-radius: 50px;
+  cursor: pointer;
+  border-radius: 100vw;
 }/*# sourceMappingURL=style.css.map */
