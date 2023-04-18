@@ -49,16 +49,33 @@ body {
 
 .section-title {
   font-family: "ubuntubold";
+  padding: 1vh;
+  color: #1e225c;
 }
 
 .prompt {
   font-family: "ubunturegular";
   color: #b4b3b3;
-  margin-top: -4.5%;
+  margin-top: -5vh;
+  padding: 1vh;
 }
 
 .enter-info-container {
-  font-family: "ubunturegular";
+  display: grid;
+  padding: 1vh;
+  margin-top: 5vh;
+}
+
+.input-text {
+  font-family: "ubuntubold";
+  font-size: small;
+  color: #1e225c;
+}
+
+.text-box {
+  display: grid;
+  max-width: 50px;
+  border-radius: 4%;
 }
 
 .nagivation-button {
