@@ -102,14 +102,16 @@ body {
     position: absolute;
     top: 25%;
     bottom: 0%;
-    left: -50%;
+    left: -54%;
     right: 69%;
+    padding: 10px 0;
 }
 
 .enter-info-prompt {
     z-index: 2;
     font-size: small;
     color: $dark-blue;
+    padding: 10px 0;
 
 }
 
@@ -121,10 +123,18 @@ input[type=text] {
     min-width: 40vh;
     border-radius: 10%;
     border: 2px solid $light-grey;
+    box-sizing: border-box;
+    transition: .3s;
+
 
 }
 
-.nagivation-button {
+input[type=text]:focus {
+    border-color: $dark-blue;
+    box-shadow: 0 5px 5px 0 rgba(30, 0, 161, 0.25)
+}
+
+.nav-button {
     z-index: 2;
     font-family: 'ubuntubold';
     position: absolute;
@@ -140,4 +150,9 @@ input[type=text] {
     cursor: pointer;
     color: $white;
     background-color: $red;
+
+    &:hover {
+        background-color: $dark-blue;
+        transition: .2s;
+    }
 }
