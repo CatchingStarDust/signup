@@ -27,13 +27,14 @@ body {
   bottom: 0%;
   left: 0%;
   right: 0%;
-  display: grid;
-  grid-template-columns: 40vh 55vh;
-  padding: 15px;
   height: 65vh;
   width: 95vh;
+  display: grid;
   margin: auto;
   margin-top: 10%;
+  grid-template-columns: 40vh 55vh;
+  padding: 15px;
+  overflow: hidden;
   border-radius: 4%;
   background-color: #FFFFFF;
   box-shadow: 0 5px 25px 0 rgba(30, 0, 161, 0.25);
@@ -54,12 +55,13 @@ body {
 }
 
 .background-right {
+  z-index: 2;
+  font-family: "ubunturegular";
   position: relative;
   top: 0%;
   bottom: 0%;
   left: 50%;
   right: 0%;
-  font-family: "ubunturegular";
   max-width: 46rem;
   display: grid;
 }
@@ -75,30 +77,29 @@ body {
   width: 700px;
   border-radius: 100%;
   opacity: 20%;
-  overflow: hidden;
   background-color: #969696;
 }
 
 .section-title {
   z-index: 2;
+  font-family: "ubuntubold";
   position: absolute;
   top: 0%;
   bottom: 0%;
   left: -55%;
   right: 0%;
-  font-family: "ubuntubold";
   padding: 1vh;
   color: #1e225c;
 }
 
 .prompt {
   z-index: 2;
+  font-family: inherit;
   position: absolute;
   top: 18%;
   bottom: 0%;
   left: -55%;
   right: 0%;
-  font-family: inherit;
   color: #b4b3b3;
   margin-top: -5vh;
   padding: 1vh;
@@ -128,17 +129,19 @@ body {
 
 .nagivation-button {
   z-index: 2;
-  position: absolute;
-  right: 10%;
-  bottom: 0%;
-  background-color: #ee1212;
   font-family: "ubuntubold";
-  color: #FFFFFF;
-  line-height: 1;
+  position: absolute;
+  top: 5%;
+  bottom: 0%;
+  left: 10%;
+  right: 0%;
+  border-radius: 100vw;
   padding: 1rem 2rem;
+  line-height: 1.5;
   max-width: -moz-max-content;
   max-width: max-content;
   margin-top: 100%;
   cursor: pointer;
-  border-radius: 100vw;
+  color: #FFFFFF;
+  background-color: #ee1212;
 }/*# sourceMappingURL=style.css.map */
