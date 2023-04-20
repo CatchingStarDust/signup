@@ -5,17 +5,14 @@ body {
     background-color: $baby-blue;
 }
 
-// .navbar {
-//     font-family: 'ubuntubold';
-//     height: 65vh;
-//     width: 95vh;
-//     margin-top: 0%;
-//     background-color: $sky-blue;
 
-// }
-
-
-.sign-up-background-container {
+.background-container {
+    z-index: 2;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
     display: grid;
     grid-template-columns: 40vh 55vh;
     padding: 15px;
@@ -29,6 +26,12 @@ body {
 }
 
 .background-left {
+    z-index: 2;
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
     display: grid;
     height: 65vh;
     width: 30vh;
@@ -39,18 +42,40 @@ body {
 
 .background-right {
     position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 50%;
+    right: 0%;
     font-family: 'ubunturegular';
     max-width: 46rem;
     display: grid;
 
 }
 
+.background-bubble {
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+    bottom: 0%;
+    left: 50%;
+    right: 0%;
+    height: 700px;
+    width: 700px;
+    border-radius: 100%;
+    opacity: 20%;
+    overflow: hidden;
+    background-color: $dark-grey;
+}
+
+
+
 
 .section-title {
+    z-index: 2;
     position: absolute;
     top: 0%;
     bottom: 0%;
-    left: -2%;
+    left: -55%;
     right: 0%;
     font-family: 'ubuntubold';
     padding: 1vh;
@@ -59,10 +84,11 @@ body {
 }
 
 .prompt {
+    z-index: 2;
     position: absolute;
     top: 18%;
     bottom: 0%;
-    left: -2%;
+    left: -55%;
     right: 0%;
     font-family: inherit;
     color: $grey;
@@ -71,26 +97,30 @@ body {
 }
 
 .enter-info-container {
+    z-index: 2;
     position: absolute;
     top: 25%;
     bottom: 0%;
-    left: 0%;
+    left: -50%;
     right: 69%;
 }
 
 .input-text {
+    z-index: 2;
     font-size: small;
     color: $dark-blue;
 
 }
 
 .text-box {
+    z-index: 2;
     display: grid;
     max-width: 50px;
     border-radius: 4%;
 }
 
 .nagivation-button {
+    z-index: 2;
     position: absolute;
     right: 10%;
     bottom: 0%;
@@ -105,7 +135,3 @@ body {
     border-radius: 100vw;
 }
 
-.personal-info {
-    font-family: 'ubunturegular';
-
-}
