@@ -42,32 +42,44 @@ body {
 }
 
 .background-right {
+  position: relative;
   font-family: "ubunturegular";
   max-width: 46rem;
   display: grid;
 }
 
 .section-title {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: -2%;
+  right: 0%;
   font-family: "ubuntubold";
   padding: 1vh;
   color: #1e225c;
 }
 
 .prompt {
-  font-family: "ubunturegular";
+  position: absolute;
+  top: 18%;
+  bottom: 0%;
+  left: -2%;
+  right: 0%;
+  font-family: inherit;
   color: #b4b3b3;
   margin-top: -5vh;
   padding: 1vh;
 }
 
 .enter-info-container {
-  display: grid;
-  padding: 1vh;
-  margin-top: 5vh;
+  position: absolute;
+  top: 25%;
+  bottom: 0%;
+  left: 0%;
+  right: 69%;
 }
 
 .input-text {
-  font-family: "ubuntubold";
   font-size: small;
   color: #1e225c;
 }
@@ -79,7 +91,9 @@ body {
 }
 
 .nagivation-button {
-  display: relative;
+  position: absolute;
+  right: 10%;
+  bottom: 0%;
   background-color: #ee1212;
   font-family: "ubuntubold";
   color: #FFFFFF;
