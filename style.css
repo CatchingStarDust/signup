@@ -114,17 +114,19 @@ body {
   right: 69%;
 }
 
-.input-text {
+.enter-info-prompt {
   z-index: 2;
   font-size: small;
   color: #1e225c;
 }
 
-.text-box {
+input[type=text] {
   z-index: 2;
   display: grid;
-  max-width: 50px;
-  border-radius: 4%;
+  min-height: 5vh;
+  min-width: 40vh;
+  border-radius: 10%;
+  border: 2px solid #d8d8d8;
 }
 
 .nagivation-button {
@@ -137,7 +139,7 @@ body {
   right: 0%;
   border-radius: 100vw;
   padding: 1rem 2rem;
-  line-height: 1.5;
+  line-height: 2;
   max-width: -moz-max-content;
   max-width: max-content;
   margin-top: 100%;
