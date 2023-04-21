@@ -38,7 +38,7 @@ body {
     height: 65vh;
     width: 30vh;
     border-radius: 4%;
-    background-color: $dark-blue
+    background-color: $dark-blue;
 
 }
 
@@ -51,10 +51,9 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    background-color: $sunset-orange;
-    opacity: 50%;
-    border: 10px;
-    border-color: $sunset-orange;
+    border: 2px solid $sunset-orange;
+    background-color: $dark-blue;
+
 }
 
 .background-right {
@@ -96,7 +95,7 @@ body {
     left: -55%;
     right: 0%;
     padding: 1vh;
-    color: $sunset-orange;
+    color: $dark-blue;
 
 }
 
@@ -108,14 +107,14 @@ body {
     bottom: 0%;
     left: -55%;
     right: 0%;
-    color: $sunset-orange;
+    color: $dark-blue;
+    opacity: 60%;
     margin-top: -5vh;
     padding: 1vh;
 }
 
 .enter-info-container {
     z-index: 2;
-
     position: absolute;
     top: 25%;
     bottom: 0%;
@@ -126,7 +125,8 @@ body {
 
 .enter-info-prompt {
     z-index: 2;
-    font-size: small;
+    font-family: 'ubuntubold';
+    font-size: 15px;
     color: $dark-blue;
     padding: 10px 0;
 
@@ -135,20 +135,22 @@ body {
 
 input[type=text] {
     z-index: 2;
+    font-family: inherit;
+    font-size: 14px;
     display: grid;
     min-height: 5vh;
     min-width: 40vh;
-    border-radius: 10%;
-    border: 2px solid $light-lemon-yellow;
-    box-sizing: border-box;
+    border-radius: 10px;
     transition: .3s;
 
 
 }
 
-input[type=text]:focus {
-    box-shadow: 0 5px 5px 0 $sunset-orange;
+input[type=text] :focus{
+
+    border-color: $sunset-orange;
 }
+
 
 .nav-button {
     z-index: 2;
@@ -165,10 +167,11 @@ input[type=text]:focus {
     margin-top: 100%;
     cursor: pointer;
     color: $white;
-    background-color: $sunset-orange;
+    background-color: $light-blue;
 
     &:hover {
         background-color: $dark-blue;
-        transition: .2s;
+        color: $sunset-orange;
+        transition: .1s;
     }
 }

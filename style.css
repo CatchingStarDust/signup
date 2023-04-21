@@ -52,7 +52,7 @@ body {
   height: 65vh;
   width: 30vh;
   border-radius: 4%;
-  background-color: #1e225c;
+  background-color: #252e57;
 }
 
 .step-info-button {
@@ -64,10 +64,8 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  background-color: #ffbc62;
-  opacity: 50%;
-  border: 10px;
-  border-color: #ffbc62;
+  border: 2px solid #ffbc62;
+  background-color: #252e57;
 }
 
 .background-right {
@@ -105,7 +103,7 @@ body {
   left: -55%;
   right: 0%;
   padding: 1vh;
-  color: #ffbc62;
+  color: #252e57;
 }
 
 .prompt {
@@ -116,7 +114,8 @@ body {
   bottom: 0%;
   left: -55%;
   right: 0%;
-  color: #ffbc62;
+  color: #252e57;
+  opacity: 60%;
   margin-top: -5vh;
   padding: 1vh;
 }
@@ -133,24 +132,25 @@ body {
 
 .enter-info-prompt {
   z-index: 2;
-  font-size: small;
-  color: #1e225c;
+  font-family: "ubuntubold";
+  font-size: 15px;
+  color: #252e57;
   padding: 10px 0;
 }
 
 input[type=text] {
   z-index: 2;
+  font-family: inherit;
+  font-size: 14px;
   display: grid;
   min-height: 5vh;
   min-width: 40vh;
-  border-radius: 10%;
-  border: 2px solid #fff7d6;
-  box-sizing: border-box;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-input[type=text]:focus {
-  box-shadow: 0 5px 5px 0 #ffbc62;
+input[type=text] :focus {
+  border-color: #ffbc62;
 }
 
 .nav-button {
@@ -169,9 +169,10 @@ input[type=text]:focus {
   margin-top: 100%;
   cursor: pointer;
   color: #FFFFFF;
-  background-color: #ffbc62;
+  background-color: #7888f3;
 }
 .nav-button:hover {
-  background-color: #1e225c;
-  transition: 0.2s;
+  background-color: #252e57;
+  color: #ffbc62;
+  transition: 0.1s;
 }/*# sourceMappingURL=style.css.map */
