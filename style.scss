@@ -2,7 +2,8 @@
 @import "fonts";
 
 body {
-    background-color: $baby-blue;
+    background-color: $midnight-blue;
+    display: flex;
 }
 
 
@@ -22,7 +23,7 @@ body {
     padding: 15px;
     overflow: hidden;
     border-radius: 4%;
-    background-color: $white;
+    background-color: $light-blue;
     box-shadow: 0 5px 25px 0 rgba(30, 0, 161, 0.25)
 }
 
@@ -37,8 +38,23 @@ body {
     height: 65vh;
     width: 30vh;
     border-radius: 4%;
-    background-color: $red;
+    background-color: $dark-blue
 
+}
+
+.step-info-button {
+    position: relative;
+    top: 50%;
+    bottom: 0%;
+    left: 10%;
+    right: 0%;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: $sunset-orange;
+    opacity: 50%;
+    border: 10px;
+    border-color: $sunset-orange;
 }
 
 .background-right {
@@ -64,8 +80,8 @@ body {
     height: 700px;
     width: 700px;
     border-radius: 100%;
-    opacity: 20%;
-    background-color: $dark-grey;
+    opacity: 40%;
+    background-color: $light-lemon-yellow;
 }
 
 
@@ -80,7 +96,7 @@ body {
     left: -55%;
     right: 0%;
     padding: 1vh;
-    color: $dark-blue;
+    color: $sunset-orange;
 
 }
 
@@ -92,19 +108,20 @@ body {
     bottom: 0%;
     left: -55%;
     right: 0%;
-    color: $grey;
+    color: $sunset-orange;
     margin-top: -5vh;
     padding: 1vh;
 }
 
 .enter-info-container {
     z-index: 2;
+
     position: absolute;
     top: 25%;
     bottom: 0%;
     left: -54%;
     right: 69%;
-    padding: 10px 0;
+    gap: 8px;
 }
 
 .enter-info-prompt {
@@ -122,7 +139,7 @@ input[type=text] {
     min-height: 5vh;
     min-width: 40vh;
     border-radius: 10%;
-    border: 2px solid $light-grey;
+    border: 2px solid $light-lemon-yellow;
     box-sizing: border-box;
     transition: .3s;
 
@@ -130,8 +147,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    border-color: $dark-blue;
-    box-shadow: 0 5px 5px 0 rgba(30, 0, 161, 0.25)
+    box-shadow: 0 5px 5px 0 $sunset-orange;
 }
 
 .nav-button {
@@ -149,7 +165,7 @@ input[type=text]:focus {
     margin-top: 100%;
     cursor: pointer;
     color: $white;
-    background-color: $red;
+    background-color: $sunset-orange;
 
     &:hover {
         background-color: $dark-blue;
