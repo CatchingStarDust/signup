@@ -32,7 +32,7 @@ body {
   width: 95vh;
   display: grid;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 7%;
   grid-template-columns: 40vh 55vh;
   padding: 15px;
   overflow: hidden;
@@ -97,6 +97,7 @@ body {
 .section-title {
   z-index: 2;
   font-family: "ubuntubold";
+  font-size: 2.25em;
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -109,8 +110,9 @@ body {
 .prompt {
   z-index: 2;
   font-family: inherit;
+  font-size: 1em;
   position: absolute;
-  top: 18%;
+  top: 19%;
   bottom: 0%;
   left: -55%;
   right: 0%;
@@ -133,7 +135,7 @@ body {
 .enter-info-prompt {
   z-index: 2;
   font-family: "ubuntubold";
-  font-size: 15px;
+  font-size: 1em;
   color: #252e57;
   padding: 10px 0;
 }
@@ -145,6 +147,7 @@ input[type=text] {
   display: grid;
   min-height: 5vh;
   min-width: 40vh;
+  padding: 3px;
   border-radius: 10px;
   transition: 0.3s;
 }
