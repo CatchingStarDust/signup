@@ -1,25 +1,59 @@
 @import "variables";
 @import "fonts";
 
+
+
 body {
+    z-index: 1;
+    position: relative;
     background-color: $midnight-blue;
     display: flex;
+}
+
+.blue-blur {
+    z-index: 1;
+    position: absolute;
+    top: 0svh;
+    bottom: 0svh;
+    left: 0svh;
+    right: 0svh;
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    filter: blur(123px);
+    background-color: $periwinkle-blue;
+
+}
+
+.red-blur {
+    z-index: 1;
+    position: absolute;
+    top: 41.5svh;
+    bottom: 0svh;
+    left: 68.8svh;
+    right: 0svh;
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    filter: blur(123px);
+    background-color: $cherry-red;
+
 }
 
 
 .background-container {
     z-index: 2;
     position: relative;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    height: 65vh;
-    width: 95vh;
+    top: 0svh;
+    bottom: 0svh;
+    left: 0svh;
+    right: 0svh;
+    height: 65svh;
+    width: 95svh;
     display: grid;
     margin: auto;
     margin-top: 7%;
-    grid-template-columns: 40vh 55vh;
+    grid-template-columns: 40svh 55svh;
     padding: 15px;
     overflow: hidden;
     border-radius: 4%;
@@ -30,10 +64,10 @@ body {
 .background-left {
     z-index: 2;
     position: relative;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+    top: 0svh;
+    bottom: 0svh;
+    left: 0svh;
+    right: 0svh;
     display: grid;
     height: 65vh;
     width: 30vh;
@@ -44,14 +78,14 @@ body {
 
 .step-info-button {
     position: relative;
-    top: 50%;
-    bottom: 0%;
-    left: 10%;
-    right: 0%;
+    top: 50svh;
+    bottom: 0svh;
+    left: 10svh;
+    right: 0svh;
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    border: 2px solid $sunset-orange;
+    border: 2px solid $cherry-red;
     background-color: $dark-blue;
 
 }
@@ -60,10 +94,10 @@ body {
     z-index: 2;
     font-family: 'ubunturegular';
     position: relative;
-    top: 0%;
-    bottom: 0%;
-    left: 50%;
-    right: 0%;
+    top: 0svh;
+    bottom: 0svh;
+    left: 50svh;
+    right: 0svh;
     max-width: 46rem;
     display: grid;
 
@@ -72,15 +106,15 @@ body {
 .background-bubble {
     z-index: 1;
     position: absolute;
-    top: 10%;
-    bottom: 0%;
-    left: 50%;
-    right: 0%;
+    top: 10svh;
+    bottom: 0svh;
+    left: 50svh;
+    right: 0svh;
     height: 700px;
     width: 700px;
     border-radius: 100%;
     opacity: 40%;
-    background-color: $light-lemon-yellow;
+    background-color: $cherry-red;
 }
 
 
@@ -91,11 +125,11 @@ body {
     font-family: 'ubuntubold';
     font-size: 2.25em;
     position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: -55%;
-    right: 0%;
-    padding: 1vh;
+    top: 0svh;
+    bottom: 0svh;
+    left: -55svh;
+    right: 0svh;
+    padding: 1svh;
     color: $dark-blue;
 
 }
@@ -105,23 +139,23 @@ body {
     font-family: inherit;
     font-size: 1em;
     position: absolute;
-    top: 19%;
-    bottom: 0%;
-    left: -55%;
-    right: 0%;
+    top: 19svh;
+    bottom: 0svh;
+    left: -55svh;
+    right: 0svh;
     color: $dark-blue;
     opacity: 60%;
-    margin-top: -5vh;
-    padding: 1vh;
+    margin-top: -5svh;
+    padding: 1svh;
 }
 
 .enter-info-container {
     z-index: 2;
     position: absolute;
-    top: 25%;
-    bottom: 0%;
-    left: -54%;
-    right: 69%;
+    top: 25svh;
+    bottom: 0svh;
+    left: -54svh;
+    right: 69svh;
     gap: 8px;
 }
 
@@ -140,8 +174,8 @@ input[type=text] {
     font-family: inherit;
     font-size: 14px;
     display: grid;
-    min-height: 5vh;
-    min-width: 40vh;
+    min-height: 5svh;
+    min-width: 40svh;
     padding: 3px;
     border-radius: 10px;
     transition: .3s;
@@ -159,11 +193,11 @@ input[type=text] :focus {
     z-index: 2;
     font-family: 'ubuntubold';
     position: absolute;
-    top: 5%;
-    bottom: 0%;
-    left: 10%;
-    right: 0%;
-    border-radius: 100vw;
+    top: 5svh;
+    bottom: 0svh;
+    left: 10svh;
+    right: 0svh;
+    border-radius: 100svw;
     padding: 1rem 2rem;
     line-height: 2;
     max-width: max-content;
@@ -174,7 +208,7 @@ input[type=text] :focus {
 
     &:hover {
         background-color: $dark-blue;
-        color: $sunset-orange;
+        color: $cherry-red;
         transition: .1s;
     }
 }
