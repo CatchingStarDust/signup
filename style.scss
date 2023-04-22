@@ -1,4 +1,34 @@
 @import "variables";
 @import "fonts";
 
+* {
+    margin: 0;
+    font: inherit;
+}
 
+body {
+    font-family: ubunturegular;
+}
+
+@media (min-width: 600px) {
+    body {
+        min-height: 60rem;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+
+    .main-face {
+        min-width: 60rem;
+        min-height: 40rem;
+        grid-template-columns: 2fr 1fr;
+        box-shadow: .5rem .25rem 2rem 0 $dark-blue;
+
+    }
+}
+
+.main-face {
+    border-radius: 2rem;
+    display: grid;
+    border: 0.25rem solid $red;
+}

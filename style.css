@@ -15,4 +15,32 @@
   src: url("ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+* {
+  margin: 0;
+  font: inherit;
+}
+
+body {
+  font-family: ubunturegular;
+}
+
+@media (min-width: 600px) {
+  body {
+    min-height: 60rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  .main-face {
+    min-width: 60rem;
+    min-height: 40rem;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0.5rem 0.25rem 2rem 0 #252e57;
+  }
+}
+.main-face {
+  border-radius: 2rem;
+  display: grid;
+  border: 0.25rem solid #ff0000;
 }/*# sourceMappingURL=style.css.map */
