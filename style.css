@@ -19,95 +19,61 @@
 body {
   z-index: 1;
   position: relative;
+  overflow: hidden;
   background-color: #383f72;
-  display: flex;
 }
 
-.blue-blur {
+.blur-container {
   z-index: 1;
   position: absolute;
-  top: 0svh;
-  bottom: 0svh;
-  left: 0svh;
-  right: 0svh;
+  display: grid;
+  filter: blur(123px);
+}
+
+.blue {
   height: 600px;
   width: 600px;
   border-radius: 100%;
-  filter: blur(123px);
   background-color: #d0d1ff;
 }
 
-.red-blur {
-  z-index: 1;
-  position: absolute;
-  top: 41.5svh;
-  bottom: 0svh;
-  left: 68.8svh;
-  right: 0svh;
+.red {
   height: 600px;
   width: 600px;
   border-radius: 100%;
-  filter: blur(123px);
   background-color: #cc6184;
 }
 
 .background-container {
   z-index: 2;
-  position: relative;
-  top: 0svh;
-  bottom: 0svh;
-  left: 0svh;
-  right: 0svh;
-  height: 65svh;
-  width: 95svh;
   display: grid;
+  grid-template-columns: 15rem 10fr;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   margin: auto;
-  margin-top: 7%;
-  grid-template-columns: 40svh 55svh;
-  padding: 15px;
+  padding: 20rem;
+  margin-top: 3rem;
+  width: 30rem;
   overflow: hidden;
   border-radius: 4%;
   background-color: #7888f3;
   box-shadow: 0 5px 25px 0 rgba(30, 0, 161, 0.25);
 }
 
-.background-left {
-  z-index: 2;
+.step-info-circle {
   position: relative;
-  top: 0svh;
+  top: 5svh;
   bottom: 0svh;
-  left: 0svh;
-  right: 0svh;
-  display: grid;
-  height: 65vh;
-  width: 30vh;
-  border-radius: 4%;
-  background-color: #252e57;
-}
-
-.step-info-button {
-  position: relative;
-  top: 50svh;
-  bottom: 0svh;
-  left: 10svh;
+  left: 3svh;
   right: 0svh;
   width: 25px;
   height: 25px;
   border-radius: 100%;
   border: 2px solid #cc6184;
   background-color: #252e57;
-}
-
-.background-right {
-  z-index: 2;
-  font-family: "ubunturegular";
-  position: relative;
-  top: 0svh;
-  bottom: 0svh;
-  left: 50svh;
-  right: 0svh;
-  max-width: 46rem;
-  display: grid;
 }
 
 .background-bubble {
@@ -190,9 +156,9 @@ input[type=text] :focus {
   z-index: 2;
   font-family: "ubuntubold";
   position: absolute;
-  top: 5svh;
+  top: 0svh;
   bottom: 0svh;
-  left: 10svh;
+  left: -15svh;
   right: 0svh;
   border-radius: 100svw;
   padding: 1rem 2rem;
