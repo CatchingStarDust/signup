@@ -35,12 +35,46 @@ body {
   .main-face {
     min-width: 60rem;
     min-height: 40rem;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 20fr 1fr;
     box-shadow: 0.5rem 0.25rem 2rem 0 #252e57;
+    overflow: hidden;
   }
 }
 .main-face {
   border-radius: 2rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  max-height: 30rem;
+  border: 0.25rem solid #ff0000;
+}
+
+.step-info-container {
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  width: 15rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  gap: 2rem;
+  background-color: #00ff40;
+}
+
+.step-info-circle {
+  padding: 1rem;
+  margin: 1rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 100%;
+  border: 0.25rem solid #ff0000;
+}
+
+.nav-button {
+  max-width: 5rem;
+  padding: 1rem 2rem;
+  line-height: 1;
+  border-radius: 2rem;
+  cursor: pointer;
   border: 0.25rem solid #ff0000;
 }/*# sourceMappingURL=style.css.map */

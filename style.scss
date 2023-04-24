@@ -21,14 +21,54 @@ body {
     .main-face {
         min-width: 60rem;
         min-height: 40rem;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 20fr 1fr;
         box-shadow: .5rem .25rem 2rem 0 $dark-blue;
+        overflow: hidden;
 
     }
 }
 
 .main-face {
     border-radius: 2rem;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    max-height: 30rem;
     border: 0.25rem solid $red;
+}
+
+.step-info-container {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    gap: 2rem;
+
+    background-color: $green;
+}
+
+.step-info-circle {
+    padding: 1rem;
+    margin: 1rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 100%;
+
+    border: 0.25rem solid $red;
+
+}
+
+.nav-button {
+    max-width: 5rem;
+    padding: 1rem 2rem;
+    line-height: 1;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    border: 0.25rem solid $red;
+
+
 }
