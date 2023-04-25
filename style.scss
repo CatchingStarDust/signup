@@ -7,11 +7,15 @@
 }
 
 body {
+    margin-top: 5rem;
+    margin-left: 25rem;
+    margin-right: 1rem;
     font-family: ubunturegular;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 926) {
     body {
+        position: relative;
         margin-top: 3rem;
         margin-bottom: 3rem;
         margin-left: auto;
@@ -22,13 +26,20 @@ body {
     }
 
     .main-face {
+        Position: absolute;
+        display: flex;
         min-width: 60rem;
         min-height: 40rem;
-        grid-template-columns: 20fr 1fr;
-        box-shadow: .5rem .25rem 2rem 0 $dark-blue;
         overflow: hidden;
 
     }
+
+    .step-info-container {
+        Position: absolute;
+        top: 2rem;
+
+    }
+
 }
 
 .main-face {
@@ -40,27 +51,35 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex-direction: row;
-    max-width: 60rem;
-    max-height: 30rem;
+    width: 60rem;
+    height: 35rem;
 
     border: 0.25rem solid $red;
 }
 
 .step-info-container {
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     position: relative;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    height: 40rem;
+    padding: 1rem;
+    height: 35rem;
     width: 16rem;
     gap: 1rem;
     border-radius: 1rem;
 
     background-color: $green;
+}
+
+.step-info-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    border: 0.25rem solid $red;
+
 }
 
 .step-info-circle {
@@ -94,7 +113,7 @@ span {
     top: auto;
     bottom: 7rem;
     left: auto;
-    right: 10rem;
+    right: 2rem;
     max-width: 5rem;
     padding: 1rem 2rem;
     line-height: 1;
