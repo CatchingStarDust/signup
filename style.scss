@@ -12,7 +12,10 @@ body {
 
 @media (min-width: 600px) {
     body {
-        min-height: 60rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        margin-left: auto;
+        margin-right: auto;
         display: grid;
         place-items: center;
         overflow: hidden;
@@ -29,39 +32,69 @@ body {
 }
 
 .main-face {
-    border-radius: 2rem;
+    position: relative;
+    border-radius: 1rem;
     display: flex;
-    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: row;
     max-width: 60rem;
     max-height: 30rem;
+
     border: 0.25rem solid $red;
 }
 
 .step-info-container {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     height: 40rem;
-    width: 15rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    gap: 2rem;
+    width: 16rem;
+    gap: 1rem;
+    border-radius: 1rem;
 
     background-color: $green;
 }
 
 .step-info-circle {
     padding: 1rem;
-    margin: 1rem;
-    width: 0.25rem;
-    height: 0.25rem;
+    width: .20rem;
+    height: 0.20rem;
     border-radius: 100%;
-
     border: 0.25rem solid $red;
+    background-color: $light-grey;
+
+}
+
+.step-info {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    font-family: inherit;
+    line-height: 1;
+    margin-left: 3rem;
+}
+
+span {
+    opacity: 40%;
 
 }
 
 .nav-button {
+    position: absolute;
+    top: auto;
+    bottom: 7rem;
+    left: auto;
+    right: 10rem;
     max-width: 5rem;
     padding: 1rem 2rem;
     line-height: 1;
