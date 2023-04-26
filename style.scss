@@ -6,65 +6,24 @@
     font: inherit;
 }
 
+
+
 body {
-    margin-top: 5rem;
-    margin-left: 25rem;
-    margin-right: 1rem;
-    font-family: ubunturegular;
-}
+    z-index: 1;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows:
+        auto 1fr auto;
 
-@media (max-width: 926) {
-    body {
-        position: relative;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        place-items: center;
-        overflow: hidden;
-    }
-
-    .main-face {
-        Position: absolute;
-        display: flex;
-        min-width: 60rem;
-        min-height: 40rem;
-        overflow: hidden;
-
-    }
-
-    .step-info-container {
-        Position: absolute;
-        top: 2rem;
-
-    }
-
-}
-
-.main-face {
-    position: relative;
-    border-radius: 1rem;
-    display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    flex-direction: row;
-    width: 60rem;
-    height: 35rem;
-
-    border: 0.25rem solid $red;
+    border: 0.25rem solid $purple;
 }
 
 .step-info-container {
+    position: absolute;
+    z-index: 1;
+
     text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    position: relative;
-    padding: 1rem;
-    height: 35rem;
     width: 16rem;
     gap: 1rem;
     border-radius: 1rem;
@@ -72,55 +31,133 @@ body {
     background-color: $green;
 }
 
-.step-info-row {
-    display: flex;
-    flex-direction: row;
+.main-face {
+    z-index: 2;
+    display: grid;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
 
-    border: 0.25rem solid $red;
 
-}
-
-.step-info-circle {
-    padding: 1rem;
-    width: .20rem;
-    height: 0.20rem;
-    border-radius: 100%;
-    border: 0.25rem solid $red;
-    background-color: $light-grey;
+    background-color: $red;
 
 }
 
-.step-info {
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    font-family: inherit;
-    line-height: 1;
-    margin-left: 3rem;
-}
-
-span {
-    opacity: 40%;
-
-}
-
-.nav-button {
-    position: absolute;
-    top: auto;
-    bottom: 7rem;
-    left: auto;
-    right: 2rem;
-    max-width: 5rem;
-    padding: 1rem 2rem;
-    line-height: 1;
-    border-radius: 2rem;
-    cursor: pointer;
-
-    border: 0.25rem solid $red;
+// body {
+//     margin-top: 5rem;
+//     margin-left: 25rem;
+//     margin-right: 1rem;
+//     font-family: ubunturegular;
+// }
 
 
-}
+
+// .main-face {
+//     position: relative;
+//     border-radius: 1rem;
+//     display: flex;
+//     padding-left: 1rem;
+//     padding-right: 1rem;
+//     padding-top: 1rem;
+//     margin-right: 20rem;
+//     flex-direction: row;
+//     width: 60rem;
+//     height: 35rem;
+
+//     border: 0.25rem solid $red;
+// }
+
+// .step-info-container {
+//     position: absolute;
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     box-sizing: border-box;
+//     height: 35rem;
+//     right: 30rem;
+//     padding: 1rem;
+//     text-transform: uppercase;
+//     width: 16rem;
+//     gap: 1rem;
+//     border-radius: 1rem;
+
+//     background-color: $green;
+// }
+
+// .step-info-row {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     gap: 1rem;
+
+//     border: 0.25rem solid $red;
+
+// }
+
+// .step-info-circle {
+//     padding: 1rem;
+//     width: .20rem;
+//     height: 0.20rem;
+//     border-radius: 100%;
+
+//     border: 0.25rem solid $red;
+//     background-color: $light-grey;
+
+// }
+
+// .step-info {
+//     position: absolute;
+//     top: auto;
+//     bottom: auto;
+//     left: auto;
+//     right: auto;
+//     font-family: inherit;
+//     line-height: 1;
+//     margin-left: 3rem;
+// }
+
+// span {
+//     opacity: 40%;
+//     font-size: 1rem;
+
+// }
+
+// .selection-area {
+//     position: relative;
+//     left: 20rem;
+//     border-radius: 1rem;
+
+//     border: 0.25rem solid $red;
+// }
+
+// .title {
+//     font-size: 3rem;
+//     line-height: 1rem;
+// }
+
+// .enter-info-container{
+//     position: absolute;
+//     top: 8rem;
+// }
+
+// .info-prompt{
+
+
+// }
+
+
+// .nav-button {
+//     position: absolute;
+//     top: auto;
+//     bottom: 7rem;
+//     left: auto;
+//     right: 2rem;
+//     max-width: 5rem;
+//     padding: 1rem 2rem;
+//     line-height: 1;
+//     border-radius: 2rem;
+//     cursor: pointer;
+
+//     border: 0.25rem solid $red;
+
+
+// }

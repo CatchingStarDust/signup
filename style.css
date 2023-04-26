@@ -22,105 +22,28 @@
 }
 
 body {
-  margin-top: 5rem;
-  margin-left: 25rem;
-  margin-right: 1rem;
-  font-family: ubunturegular;
-}
-
-@media (max-width: 926) {
-  body {
-    position: relative;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  .main-face {
-    Position: absolute;
-    display: flex;
-    min-width: 60rem;
-    min-height: 40rem;
-    overflow: hidden;
-  }
-  .step-info-container {
-    Position: absolute;
-    top: 2rem;
-  }
-}
-.main-face {
-  position: relative;
-  border-radius: 1rem;
-  display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  flex-direction: row;
-  width: 60rem;
-  height: 35rem;
-  border: 0.25rem solid #ff0000;
+  z-index: 1;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 0.25rem solid #7700ff;
 }
 
 .step-info-container {
+  position: absolute;
+  z-index: 1;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: relative;
-  padding: 1rem;
-  height: 35rem;
   width: 16rem;
   gap: 1rem;
   border-radius: 1rem;
   background-color: #00ff40;
 }
 
-.step-info-row {
-  display: flex;
-  flex-direction: row;
+.main-face {
+  z-index: 2;
+  display: grid;
   align-items: center;
-  gap: 1rem;
-  border: 0.25rem solid #ff0000;
-}
-
-.step-info-circle {
-  padding: 1rem;
-  width: 0.2rem;
-  height: 0.2rem;
-  border-radius: 100%;
-  border: 0.25rem solid #ff0000;
-  background-color: #d8d8d8;
-}
-
-.step-info {
-  position: absolute;
-  top: auto;
-  bottom: auto;
-  left: auto;
-  right: auto;
-  font-family: inherit;
-  line-height: 1;
-  margin-left: 3rem;
-}
-
-span {
-  opacity: 40%;
-}
-
-.nav-button {
-  position: absolute;
-  top: auto;
-  bottom: 7rem;
-  left: auto;
-  right: 2rem;
-  max-width: 5rem;
-  padding: 1rem 2rem;
-  line-height: 1;
-  border-radius: 2rem;
-  cursor: pointer;
-  border: 0.25rem solid #ff0000;
+  justify-content: center;
+  background-color: #ff0000;
 }/*# sourceMappingURL=style.css.map */
