@@ -26,24 +26,61 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr 1fr 1fr;
   border: 0.25rem solid #7700ff;
 }
 
-.step-info-container {
-  position: absolute;
+.main-face {
+  min-height: 10vh;
+  min-height: 30dvh;
+  z-index: 2;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 15rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: #ff0000;
+}
+
+.end-bar {
   z-index: 1;
+  min-height: 10vh;
+  min-height: 10dvh;
+  margin-top: 20rem;
+  background-color: #7700ff;
+}
+
+.step-info-container {
+  z-index: 1;
+  min-width: 100vh;
+  min-width: 100dvh;
+  min-height: 30dvh;
+  display: flex;
+  position: absolute;
   text-transform: uppercase;
-  width: 16rem;
+  justify-content: center;
   gap: 1rem;
+  margin-bottom: 35rem;
   border-radius: 1rem;
   background-color: #00ff40;
 }
 
-.main-face {
-  z-index: 2;
-  display: grid;
+.step-info-row {
+  display: flex;
+  position: relative;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  background-color: #ff0000;
+  gap: 1rem;
+  border: 0.25rem solid #ff0000;
+}
+
+.step-info-circle {
+  padding: 1rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 100%;
+  border: 0.25rem solid #ff0000;
+  background-color: #d8d8d8;
 }/*# sourceMappingURL=style.css.map */

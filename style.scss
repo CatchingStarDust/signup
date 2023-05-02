@@ -13,34 +13,83 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     display: grid;
-    grid-template-rows:
-        auto 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr;
 
     border: 0.25rem solid $purple;
 }
 
-.step-info-container {
-    position: absolute;
-    z-index: 1;
 
-    text-transform: uppercase;
-    width: 16rem;
-    gap: 1rem;
-    border-radius: 1rem;
-
-    background-color: $green;
-}
 
 .main-face {
+    min-height: 10vh;
+    min-height: 30dvh;
     z-index: 2;
-    display: grid;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 15rem;
     align-items: center;
     justify-content: center;
+    border-radius: 1rem;
 
 
     background-color: $red;
 
 }
+
+.end-bar {
+    z-index: 1;
+    min-height: 10vh;
+    min-height: 10dvh;
+    margin-top: 20rem;
+
+    background-color: $purple;
+
+}
+
+.step-info-container {
+    z-index: 1;
+    min-width: 100vh;
+    min-width: 100dvh;
+    min-height: 30dvh;
+    display: flex;
+    position: absolute;
+    text-transform: uppercase;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 35rem;
+    border-radius: 1rem;
+
+    background-color: $green;
+}
+
+.step-info-row {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border: 0.25rem solid $red;
+
+}
+
+.step-info-circle {
+    padding: 1rem;
+    width: .20rem;
+    height: 0.20rem;
+    border-radius: 100%;
+
+    border: 0.25rem solid $red;
+    background-color: $light-grey;
+
+}
+
+
+
+
+
+
+
 
 // body {
 //     margin-top: 5rem;
