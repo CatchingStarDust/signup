@@ -22,6 +22,7 @@ body {
 
 
 
+
 .main-face {
     height: 40%;
     width: 90%;
@@ -31,13 +32,34 @@ body {
     margin-bottom: auto;
     margin-left: 5%;
     margin-right: auto;
+    padding-left: 5;
     position: absolute;
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
 
 
+
     background-color: $red;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 7rem;
+    font-size: 1.5rem;
+    
+    font-family: ubuntubold;
+}
+
+span {
+    font-size: 1rem;
+    opacity: 50%;
 
 }
 
@@ -77,7 +99,7 @@ body {
 .step-info-circle {
     display: flex;
     padding: 1rem;
-    width: .20rem;
+    width: 0.20rem;
     height: 0.20rem;
     border-radius: 100%;
     justify-content: center;
@@ -115,127 +137,3 @@ body {
     background-color: $purple;
 
 }
-
-
-
-
-
-// body {
-//     margin-top: 5rem;
-//     margin-left: 25rem;
-//     margin-right: 1rem;
-//     font-family: ubunturegular;
-// }
-
-
-
-// .main-face {
-//     position: relative;
-//     border-radius: 1rem;
-//     display: flex;
-//     padding-left: 1rem;
-//     padding-right: 1rem;
-//     padding-top: 1rem;
-//     margin-right: 20rem;
-//     flex-direction: row;
-//     width: 60rem;
-//     height: 35rem;
-
-//     border: 0.25rem solid $red;
-// }
-
-// .step-info-container {
-//     position: absolute;
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     box-sizing: border-box;
-//     height: 35rem;
-//     right: 30rem;
-//     padding: 1rem;
-//     text-transform: uppercase;
-//     width: 16rem;
-//     gap: 1rem;
-//     border-radius: 1rem;
-
-//     background-color: $green;
-// }
-
-// .step-info-row {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     gap: 1rem;
-
-//     border: 0.25rem solid $red;
-
-// }
-
-// .step-info-circle {
-//     padding: 1rem;
-//     width: .20rem;
-//     height: 0.20rem;
-//     border-radius: 100%;
-
-//     border: 0.25rem solid $red;
-//     background-color: $light-grey;
-
-// }
-
-// .step-info {
-//     position: absolute;
-//     top: auto;
-//     bottom: auto;
-//     left: auto;
-//     right: auto;
-//     font-family: inherit;
-//     line-height: 1;
-//     margin-left: 3rem;
-// }
-
-// span {
-//     opacity: 40%;
-//     font-size: 1rem;
-
-// }
-
-// .selection-area {
-//     position: relative;
-//     left: 20rem;
-//     border-radius: 1rem;
-
-//     border: 0.25rem solid $red;
-// }
-
-// .title {
-//     font-size: 3rem;
-//     line-height: 1rem;
-// }
-
-// .enter-info-container{
-//     position: absolute;
-//     top: 8rem;
-// }
-
-// .info-prompt{
-
-
-// }
-
-
-// .nav-button {
-//     position: absolute;
-//     top: auto;
-//     bottom: 7rem;
-//     left: auto;
-//     right: 2rem;
-//     max-width: 5rem;
-//     padding: 1rem 2rem;
-//     line-height: 1;
-//     border-radius: 2rem;
-//     cursor: pointer;
-
-//     border: 0.25rem solid $red;
-
-
-// }
